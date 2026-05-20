@@ -1,0 +1,14 @@
+node_modules/
+.env
+.claude/
+.claude*
+.codex/
+.codex*
+.hydra
+.hydra-state/
+.hydra.lock
+PHASES.MD
+ISSUES_FOUND.MD
+desktop.ini
+npm-debug.log*
+*.log

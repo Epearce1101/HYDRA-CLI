@@ -1,0 +1,33 @@
+{
+  "name": "hydra-cli",
+  "version": "2.0.0",
+  "description": "Cut one down, another spawns.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "hydra": "./hydra-home.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "doctor": "node src/cli.js doctor",
+    "check": "node --check src/adapters/base.js && node --check src/adapters/anthropic.js && node --check src/adapters/claude-subscription.js && node --check src/adapters/openai.js && node --check src/adapters/codex-subscription.js && node --check src/adapters/google-gemini.js && node --check src/adapters/index.js && node --check src/adapters/subscription-base.js && node --check src/artifact-schemas.js && node --check src/artifacts.js && node --check src/budget.js && node --check src/hydra-file.js && node --check src/cli.js && node --check src/command-registry.js && node --check src/completion.js && node --check src/context-builder.js && node --check src/decision.js && node --check src/env.js && node --check src/heads.js && node --check src/logo.js && node --check src/dashboard.js && node --check src/doctor.js && node --check src/head-activity.js && node --check src/head-commands.js && node --check src/head-display.js && node --check src/implementation.js && node --check src/io-state.js && node --check src/menu-catalog.js && node --check src/menu.js && node --check src/model-display.js && node --check src/native-commands.js && node --check src/gates.js && node --check src/intake.js && node --check src/orchestration.js && node --check src/setup-wizard.js && node --check src/text-utils.js && node --check src/permissions.js && node --check src/project.js && node --check src/providers.js && node --check src/provider-commands.js && node --check scripts/smoke.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "claude",
+    "codex",
+    "gemini",
+    "orchestration"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.2",
+    "@google/generative-ai": "^0.24.1",
+    "openai": "^6.37.0"
+  }
+}
