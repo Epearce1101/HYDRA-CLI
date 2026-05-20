@@ -210,5 +210,3 @@ npm start
 ## Project Status
 
 Hydra is actively evolving. Core terminal routing, guided setup, dashboard mode, role commands, removable heads, local state, and the first orchestration/artifact slices are implemented. The full-team workflow is being built in thin, testable pieces.
-
-See [PHASES.MD](PHASES.MD) for the detailed roadmap and [ISSUES_FOUND.MD](ISSUES_FOUND.MD) for the running issue log.
